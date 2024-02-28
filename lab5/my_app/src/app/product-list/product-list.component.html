@@ -1,0 +1,8 @@
+<ul *ngFor="let category of categories">
+  <li>
+    <a [routerLink]="['/category', category.id]"> {{ category.name }}</a>
+  </li>
+</ul>
+<div class="product-list-container">
+    <app-product-item *ngFor="let product of products" [product]="product" (remove)="removeItem(product)"></app-product-item>
+</div>

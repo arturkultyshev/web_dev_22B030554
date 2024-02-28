@@ -1,0 +1,15 @@
+<div class="product-item" *ngIf="product">
+        <a class="link-product" [title]="product.name + ' details'" [routerLink]="['/products', product.id]" *ngIf="product">
+          <h2 class="product-heading">{{ product.name }}</h2>
+          <img class="product-photo" [src]="product.image" alt="Exterior photo of {{product.name}}">
+          <p class="product-value">Оценка:{{ product.rating }}</p>
+          <p class="product-description">{{ product.description }}</p>
+          <p class="product-value">Price: <strong>{{ product.price | currency: 'KZT'}}</strong> </p>
+        </a>
+        <div class="buttons">
+            <button type="button" class="default-btn" (click)="share(product.address)">Поделиться</button>
+            <button type="button" class="remove-btn" (click)="remove.emit(product)">Удалить</button>
+            <button type="button" class="default-btn" (click)="switchLike()">Лайки: {{ product.likes}}</button>
+
+        </div>
+</div>
