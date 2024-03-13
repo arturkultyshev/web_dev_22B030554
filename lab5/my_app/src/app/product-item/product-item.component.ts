@@ -8,7 +8,7 @@ import { Product } from '../products';
 export class ProductItemComponent {
   @Input() product: Product | undefined;
   @Output() remove = new EventEmitter();
-  isLiked: boolean = false;
+
 
   share(massage:string) {
     const phoneNumber = '+77770230743';

@@ -27,14 +27,14 @@ function addTask() {
         li.appendChild(deleteBtn);
 
         taskList.appendChild(li);
-
         newItemInput.value = "";
     }
 }
 
 function updateTaskStatus(taskItem, isChecked) {
+    console.log(taskItem.children)
     if (isChecked) {
-        taskItem.style.textDecoration = "line-through";
+        taskItem.children[1].style.textDecoration = "line-through";
     } else {
         taskItem.style.textDecoration = "none";
     }
@@ -43,4 +43,11 @@ function updateTaskStatus(taskItem, isChecked) {
 function deleteTask(taskItem) {
     let taskList = document.getElementById("tasks");
     taskList.removeChild(taskItem);
+}
+
+function deleteAll(){
+    let arr = document.querySelectorAll('li')
+    arr.forEach(element => {
+        element.remove()
+    });
 }

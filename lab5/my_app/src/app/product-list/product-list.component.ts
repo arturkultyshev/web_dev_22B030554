@@ -30,7 +30,6 @@ export class ProductListComponent implements OnInit{
       });
     }
   removeItem(product: Product){
-
         this.productService.removeProduct(product.id);
         this.products = this.products.filter(p => p !== product);
   }

@@ -15,6 +15,11 @@ export class ProductListComponent {
     const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(massage)}`;
     window.location.href = whatsappUrl;
   }
+  share2(massage:string) {
+    const phoneNumber = '+77770230743';
+    const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(massage)}`;
+    window.location.href = whatsappUrl;
+  }
 
   onNotify() {
     window.alert('You will be notified when the product goes on sale');
