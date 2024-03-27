@@ -15,7 +15,6 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 export class AlbumDetailComponent implements OnInit {
   album!: Albums;
   updatedAlbum!: Albums;
-  loaded: boolean = false;
   isUpdating: boolean = false;
 
   constructor(private route: ActivatedRoute,
@@ -31,7 +30,6 @@ export class AlbumDetailComponent implements OnInit {
       this.albumService.getAlbum(albumId).subscribe((album) => {
         this.updatedAlbum =  { ...album};
         this.album = album;
-        this.loaded = true;
         this.updatedAlbum.title = '';
       });
     })

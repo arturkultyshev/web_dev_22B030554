@@ -1,6 +1,5 @@
 import { Component, OnInit } from '@angular/core';
 import { Albums } from '../models';
-import { POSTS } from '../fake-db';
 import { CommonModule } from '@angular/common';
 import { RouterModule } from '@angular/router';
 import { AlbumsService } from '../albums.service';
@@ -17,7 +16,6 @@ import { FormsModule } from '@angular/forms';
 export class AlbumsComponent implements OnInit {
   albums!: Albums[];
   newAlbum!: Albums;
-  loaded:boolean = false;
 
   constructor(private albumsService: AlbumsService) { }
 
@@ -41,11 +39,9 @@ export class AlbumsComponent implements OnInit {
 
 
   getAlbums(){
-    this.loaded = false;
     this.albumsService.getAlbums().subscribe((albums) => 
     { 
       this.albums = albums;
-      this.loaded = true
     });
   }
 

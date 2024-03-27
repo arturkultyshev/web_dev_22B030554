@@ -13,7 +13,6 @@ import { CommonModule } from '@angular/common';
 })
 export class AlbumPhotosComponent implements OnInit {
   photos!: Photos[];
-  loaded: boolean = false;
 
   constructor(private route: ActivatedRoute,
     private albumService: AlbumsService) { }
@@ -23,12 +22,10 @@ export class AlbumPhotosComponent implements OnInit {
   }
 
   getAlbumPhotos(){
-    this.loaded = false;
     this.route.paramMap.subscribe((params)=> {
       const albumId = Number(params.get('albumId'));
       this.albumService.getAlbumPhotos(albumId).subscribe((photos)=> {
         this.photos = photos;
-        this.loaded = true;
       });
     });
     }
