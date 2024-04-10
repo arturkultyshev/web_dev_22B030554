@@ -1,0 +1,279 @@
+[
+{
+    "model": "auth.user",
+    "fields": {
+        "password": "pbkdf2_sha256$720000$y7cs0LCHoqjF759JEs6G4p$gHAQTxVW1j/YUsz5dqrzpYDXjMFE9PGFDyB7v0TNsLY=",
+        "last_login": "2024-04-10T14:41:35.789Z",
+        "is_superuser": true,
+        "username": "admin",
+        "first_name": "",
+        "last_name": "",
+        "email": "admin@gmail.com",
+        "is_staff": true,
+        "is_active": true,
+        "date_joined": "2024-04-10T14:41:13.694Z",
+        "groups": [],
+        "user_permissions": []
+    }
+},
+{
+    "model": "sessions.session",
+    "pk": "5lxybku4rtv8tnyqhhpe2qz6dk01ngp6",
+    "fields": {
+        "session_data": ".eJxVjM0OwiAQhN-FsyHgwnbx6N1nIPxspWogKe3J-O62SQ96m8z3zbyFD-tS_Np59lMWF6HF6beLIT257iA_Qr03mVpd5inKXZEH7fLWMr-uh_t3UEIv29qe3UBBhWSQFCbUChwzKQ0qAwEDmi2jNg4QeLQYiWCwoyXndLZZfL6fFDYH:1ruZ8p:Tqp5vuYeFkqIMa6HPCUWXV3_ts7gYZEZ6vtr2HNHtWA",
+        "expire_date": "2024-04-24T14:41:35.791Z"
+    }
+},
+{
+    "model": "api.company",
+    "pk": 1,
+    "fields": {
+        "name": "google",
+        "description": "good company",
+        "city": "Almaty",
+        "address": "Tole bi"
+    }
+},
+{
+    "model": "api.company",
+    "pk": 2,
+    "fields": {
+        "name": "microsoft",
+        "description": "good company",
+        "city": "Almaty",
+        "address": "Abay"
+    }
+},
+{
+    "model": "api.company",
+    "pk": 3,
+    "fields": {
+        "name": "Meta",
+        "description": "No Description",
+        "city": "Almaty",
+        "address": "Saina"
+    }
+},
+{
+    "model": "api.vacancy",
+    "pk": 1,
+    "fields": {
+        "name": "Developer",
+        "description": "No Description",
+        "salary": 1000000.0,
+        "company": 1
+    }
+},
+{
+    "model": "api.vacancy",
+    "pk": 2,
+    "fields": {
+        "name": "Designer",
+        "description": "No Description",
+        "salary": 500000.0,
+        "company": 1
+    }
+},
+{
+    "model": "api.vacancy",
+    "pk": 3,
+    "fields": {
+        "name": "Developer",
+        "description": "No Description",
+        "salary": 2000000.0,
+        "company": 2
+    }
+},
+{
+    "model": "api.vacancy",
+    "pk": 4,
+    "fields": {
+        "name": "Designer",
+        "description": "No Description",
+        "salary": 600000.0,
+        "company": 2
+    }
+},
+{
+    "model": "api.vacancy",
+    "pk": 5,
+    "fields": {
+        "name": "Developer",
+        "description": "No Description",
+        "salary": 3000000.0,
+        "company": 3
+    }
+},
+{
+    "model": "api.vacancy",
+    "pk": 6,
+    "fields": {
+        "name": "Designer",
+        "description": "No Description",
+        "salary": 700000.0,
+        "company": 3
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 1,
+    "fields": {
+        "action_time": "2024-04-10T14:57:01.297Z",
+        "user": [
+            "admin"
+        ],
+        "content_type": [
+            "api",
+            "company"
+        ],
+        "object_id": "1",
+        "object_repr": "Company object (1)",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 2,
+    "fields": {
+        "action_time": "2024-04-10T14:57:27.016Z",
+        "user": [
+            "admin"
+        ],
+        "content_type": [
+            "api",
+            "company"
+        ],
+        "object_id": "2",
+        "object_repr": "Company object (2)",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 3,
+    "fields": {
+        "action_time": "2024-04-10T14:57:43.798Z",
+        "user": [
+            "admin"
+        ],
+        "content_type": [
+            "api",
+            "company"
+        ],
+        "object_id": "3",
+        "object_repr": "Company object (3)",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 4,
+    "fields": {
+        "action_time": "2024-04-10T14:58:12.856Z",
+        "user": [
+            "admin"
+        ],
+        "content_type": [
+            "api",
+            "vacancy"
+        ],
+        "object_id": "1",
+        "object_repr": "Vacancy object (1)",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 5,
+    "fields": {
+        "action_time": "2024-04-10T14:58:32.371Z",
+        "user": [
+            "admin"
+        ],
+        "content_type": [
+            "api",
+            "vacancy"
+        ],
+        "object_id": "2",
+        "object_repr": "Vacancy object (2)",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 6,
+    "fields": {
+        "action_time": "2024-04-10T14:58:43.853Z",
+        "user": [
+            "admin"
+        ],
+        "content_type": [
+            "api",
+            "vacancy"
+        ],
+        "object_id": "3",
+        "object_repr": "Vacancy object (3)",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 7,
+    "fields": {
+        "action_time": "2024-04-10T14:58:55.337Z",
+        "user": [
+            "admin"
+        ],
+        "content_type": [
+            "api",
+            "vacancy"
+        ],
+        "object_id": "4",
+        "object_repr": "Vacancy object (4)",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 8,
+    "fields": {
+        "action_time": "2024-04-10T14:59:08.354Z",
+        "user": [
+            "admin"
+        ],
+        "content_type": [
+            "api",
+            "vacancy"
+        ],
+        "object_id": "5",
+        "object_repr": "Vacancy object (5)",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 9,
+    "fields": {
+        "action_time": "2024-04-10T14:59:17.604Z",
+        "user": [
+            "admin"
+        ],
+        "content_type": [
+            "api",
+            "vacancy"
+        ],
+        "object_id": "6",
+        "object_repr": "Vacancy object (6)",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+}
+]
